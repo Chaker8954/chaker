@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>سيرة الشيخ الجليل</title>
+  <meta name="description" content="سيرة علمية وتاريخية موجزة عن الشيخ الجليل؛ المولد والنشأة، الدراسة، المناصب، الأوسمة، والوفاة." />
+  <meta name="theme-color" content="#0ea5e9" />
+  <style>
+    :root {
+      --bg: #0b1220;
+      --card: #0f172a;
+      --muted: #94a3b8;
+      --text: #e2e8f0;
+      --accent: #0ea5e9;
+      --ring: rgba(14,165,233,.35);
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, "Traditional Arabic", "Al Bayan", serif;
+      background: radial-gradient(1200px 700px at 80% -10%, rgba(14,165,233,.25), transparent 50%),
+                  radial-gradient(900px 600px at -10% 20%, rgba(59,130,246,.2), transparent 50%), var(--bg);
+      color: var(--text);
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Layout */
+    .container { width: min(1100px, 92%); margin: 0 auto; }
+    header {
+      position: sticky; top: 0; z-index: 50; backdrop-filter: blur(10px);
+      background: linear-gradient(to bottom, rgba(11,18,32,.85), rgba(11,18,32,.45));
+      border-bottom: 1px solid rgba(148,163,184,.15);
+    }
+    .nav { display: flex; align-items: center; justify-content: space-between; padding: 12px 0; }
+    .logo { display: flex; gap: 10px; align-items: center; font-weight: 700; letter-spacing: .5px; }
+    .logo-mark {
+      width: 36px; height: 36px; border-radius: 12px; display: grid; place-items: center; font-weight: 800;
+      background: linear-gradient(135deg, #0ea5e9, #22d3ee); color: #00121a; box-shadow: 0 8px 24px rgba(14,165,233,.35);
+    }
+    nav ul { list-style: none; padding: 0; margin: 0; display: flex; gap: 16px; flex-wrap: wrap; }
+    nav a { padding: 8px 12px; border-radius: 10px; border: 1px solid transparent; }
+    nav a:hover { background: rgba(148,163,184,.08); border-color: rgba(148,163,184,.15); }
+
+    .hero { padding: 56px 0 24px; }
+    .hero-card {
+      display: grid; grid-template-columns: 160px 1fr; gap: 24px; align-items: center;
+      background: linear-gradient(180deg, rgba(15,23,42,.7), rgba(15,23,42,.4));
+      border: 1px solid rgba(148,163,184,.15); border-radius: 24px; padding: 20px;
+      box-shadow: 0 10px 40px rgba(2,6,23,.45);
+    }
+    .portrait { width: 160px; height: 160px; border-radius: 20px; background: #0b1220; border: 1px solid rgba(148,163,184,.2); object-fit: cover; }
+    .badge { display: inline-flex; gap: 8px; align-items: center; font-size: 14px; color: var(--muted);
+      background: rgba(14,165,233,.06); border: 1px solid rgba(14,165,233,.25); padding: 6px 10px; border-radius: 999px; }
+    .title { margin: 10px 0 6px; font-size: clamp(28px, 5vw, 42px); line-height: 1.2; }
+    .subtitle { color: var(--muted); margin: 0 0 8px; font-size: 16px; }
+
+    .grid { display: grid; gap: 18px; grid-template-columns: repeat(12, 1fr); }
+    .card { grid-column: span 12; background: linear-gradient(180deg, rgba(15,23,42,.6), rgba(15,23,42,.35));
+      border: 1px solid rgba(148,163,184,.14); border-radius: 20px; padding: 18px; }
+    .card h2 { margin: 0 0 8px; font-size: 22px; }
+    .card p { margin: 0; color: #cbd5e1; line-height: 1.8; }
+
+    .two-col { grid-column: span 12; display: grid; grid-template-columns: 1fr; gap: 18px; }
+    @media (min-width: 880px) { .two-col { grid-template-columns: 1fr 1fr; } }
+
+    .list { margin: 0; padding: 0; list-style: none; display: grid; gap: 10px; }
+    .list li { background: rgba(2,6,23,.35); border: 1px dashed rgba(148,163,184,.22); padding: 12px; border-radius: 14px; }
+
+    .timeline { position: relative; padding-right: 18px; }
+    .timeline::before { content: ""; position: absolute; right: 7px; top: 0; bottom: 0; width: 2px; background: rgba(148,163,184,.22); }
+    .t-item { position: relative; padding-right: 26px; margin: 10px 0; }
+    .t-item::before { content: ""; position: absolute; right: 0; top: 8px; width: 14px; height: 14px; border-radius: 999px; background: var(--accent); box-shadow: 0 0 0 4px var(--ring); }
+
+    footer { margin: 32px 0 60px; color: var(--muted); text-align: center; }
+    .kicker { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; justify-content: center; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      padding: 10px 14px; border-radius: 14px; border: 1px solid rgba(148,163,184,.2);
+      background: rgba(148,163,184,.08); color: var(--text); cursor: pointer;
+    }
+    .btn:hover { background: rgba(148,163,184,.14); }
+    .muted { color: var(--muted); }
+    .small { font-size: 12px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="logo">
+        <div class="logo-mark" aria-hidden>سيرة</div>
+        <div>سيرة عبد الله شاكر الكرسيفي</div>
+      </div>
+      <nav aria-label="روابط سريعة">
+        <ul>
+          <li><a href="#about">نبذة</a></li>
+          <li><a href="#education">التعليم</a></li>
+          <li><a href="#positions">المناصب</a></li>
+          <li><a href="#honors">الأوسمة</a></li>
+          <li><a href="#contact">تواصل</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-card">
+        <img class="portrait" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTEhMVFhUXGBgYGBgXFxcXGRUXGxgXFxcYFxgYHSggGB0lHxcYIjEhJSkrLi4uGB8zODMtNygtLisBCgoKDg0OGhAQGi0lHyUtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAQcAvwMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAFBgQHAAIDAQj/xAA/EAABAgQDBQUGBAQGAwEAAAABAAIDBBEhBRIxBkFRYXETIoGRoQcyQrHB0RQjcvBSYqLxFSQzgpKyc8LhQ//EABgBAAMBAQAAAAAAAAAAAAAAAAECAwAE/8QAIREBAQACAgMBAQEBAQAAAAAAAAECESExAxJBE1FhcTL/2gAMAwEAAhEDEQA/AK1NTvXmUr3RYSu1BzNv7rRzytnOXEg1QF2Y48V6TzWoCJ4HgkaZeGw2kje42a0cyiCJAcdxRqVlorqZYT3dGuv4hP8AgOwcGCA6J+Y/n7o6N+6ZjLBosFO+WfDeu1VMwGZd/wDi8aa2+a6nZSbPwAdXBWUSurAKJP0H0is27DzLvjhjxcfopMP2fxjrGYPBxVjtYFLawIfpW9YqiL7PZgODWxGGoqScwoOJsoMXYKcDiO5QD3sxA6XFaq3obwauvfjwFh9/FcHtrbxP0/fNb9KPqorE8Ljy7ssaG5tdD8Lv0uFio7HK/wCak4cRhhxGte06gio/+dVW20mwESETElaxGfwfGwcv4x6p8fJL2W4kx0QrUOXOMaOo4UI3GxB6LXtFXZXc9VziOWZl45FnJxXNz11C0jJRcnRFBjRb71IiFQXm6l5KfGD3aVWhroFj7FaB97qmyPTXwWobfVbOK2loZe9rRq4ho6k0RY57KbMtdCbHjioee4w6ED4nK0MJgwwwCG0NA3AUCAYixsEQILbZYYH0+iNYI7unquXPO5VWY6grkUaaeAFLql7GZu9AkjOMaZ7yIQDYIZJQamp1RaBCNU0apcuxdZp1G0BuaAdTZaQhdaxLvH8or4moHpXzWrNXgWAsNP8AaFGhPL3EitK/2Usgd638v1K6S0CiFZsyCu7IK3aF1AQ2IZP4BLRv9aBDeeLmivnqqx262DEBjo8rUwh77Dcw+bTvbxrcK4yLIa2IAXNdoagg7xwPJNjnYFm3zg00WztKpk272b/CTBDR+VEq6GeA3s8D6EJYLTuXVjdxKvGlc3lbCGV4+GiyJMEKA83RKJDUGIy6j5IfEciBca8lNMNRn0CpYRqW1R7YuSzzcMUsDmPhp60QqExOfs8lqPfFO4UHqT9EcuMWnNE9sJ7/ADLGjdlHr/8AU4YIKMVb4rGzz8McSD/UT9FZOFHuBcM+10ZdROmo2VpPJKsR9TU70WxmbAFEChjMUwQWw+4/fgipsLKFK5WNXhnKmgTlExHDG1PBRZF7n/mH4jWnIWHyr4rR7HPbcE1tStNbIrDYGgNDdBQcKIVnkOGaDTipDQvFsCkot2roFzauiVmwQHFov5lBuCPgpZxy0fqAfotbwOPaBtzhH4iQc4DvwvzW8aAUcPEVPgFS+VfSsJgyAEVFKHmFQGP4d2ExFhH4HkD9Ju30IXX4bxpLOBTguTgpDyuT2lXTRYraKBEF0TjBDouql5D4jDXLUsqulAsKeQrxoorCwCH2UvTeRU9TdI+FS/aRWM3Vqeguf3zT7GdRql5stTSmE+lyC3NiA/lbX0P3T5hs3QUJSNg15uK7gAEzB1CubFbIQnTmN1yY/KLLmxxcsnJ+DLjvnM+nuDUfq3N8U1pZN8J8vAfE1sF1iz0CBYuBd/C258Tu8Uox9o4sWzbN3NbYcbnUrIDCAMxAJvSvjopXyfxfHw/01xdptOzYwXvmdX5UXMbTxT8EPXcXIJkB+ILvLwOBtyS+2Sn5Y/wxS20bvihA/pd9CFOGOM+JkQeAd/1JKWYLBvPlXqiEJzf5vIcRzR3S3xYmGSxWDEOVkQZv4TVrvAOoURqlB7GOFDQ/qFPVSIE3Fh+6c4/hef8Aq/UeNUdp5eL+GhAdqIV4burfkR9VMw7F4cUloq141Y6zhz5jmKhe46wOgnk5p9QD80bzE5LKnQB3R0VU+12RyR4UYD/UYWn9TKU9HeitiDoEq+0zDu1kXuA70KkQdBZ39JPkreO6qeU4UiStHPK3c5cXuXZtJxmFAiuup0bRDI1ahS8lPiPNK8JWNXobVOQy7GyvvxCNe6OlifomKd0XmByYYxrOAv11K64sAGlcud3urzjgD2ZhXivPxPI8BQfdHiRckgACpJsAOJQzDnNhwGucQLZiet0l45jb5l+VpIhA2H8d9T9lMxkxPa6tWStm6GKdT+gbhzQNkW9XEnxqSeZ39VAhUopcCxrSvJLXThjqDmHteW1b3enDqUdk4DBp3ieH3OqCYbBzOGc24buVkytJGUNygdK09VNRLgQ6XLT5hdmNdWzailbWXIF3EEbra+q7S0V7XHM2odvGoFuP7umgJUvBGuU79SF3EGje8LcgSVyc2GG5qC3EHjvXVkzD7tAQTenEbjQbk2iuoYw7/MUXHsyKUNPkpT4zCLg+LT9lGMEUq23RYEWfgNiNuS1wNWuaaOaeLXbkCwnbeIY34CaoYnaNDYoFO0AuA4fC7S+iNxzdIc5ApjEueLmnya4fQLEznC8YBsFpOQA9jmHRzS09CCFyw+JVoUpyeOevmWalzDiPhv8AeY5zT1aSD8lyITV7SpDs8Qi00iBsQf7hQ+rSlYc13S7iDnEbwQ6Yh3RBxUWKbpM5uGxT3FE9npftIzeDe8fDT1ohlU47HSfczUu81/2jT6+aGV1Bxm6aJVlq+KE49Gox3Qo1ENAlbaKJVruhXPl0pOybi2OuiMZCBoAAHc6buijS7R5KBCYC5EYAAcQEl6U8c52lQ4OvO6kSzwHC1eA4rno1d5EgHM+wv4JNbdPQ/JtDtaudqaXy8huRWQiV+Nw60PholaNi5AIb3IYoObiucptQGAANO7Q7kZgS+SRYwY7Ke8CBTUUubKS11XNBG766+iCYHjjYrQ2mXfffTSn73IzGmR+WRz8dKI2aPLtNntHDWhFAfiNKivzUYxMuU0q4i4G4ndy32Xd8cZnOO64B40pX0Qx+Iw2Qw551FSbVrxWrdQYbEcR7n9S1caXoRxr+7oFhO1kCIPfaHVoQbFFfxzHWab8OKb1pJlHCK75pUx5obPST9+cj6D5ppOtEie0OY7ONAc3Vne8nA/RKGXS38LjbkZSnhE4HBkRp7rgCPFNUJ1QniGSsfbHImsCMP5oZP9bf/ZVmQVfm3eGdvJxWAVc0do39TL+oqPFUU1wouvx3hz5dopZqoMdt0WeBdDprcjnOGxS4MPO5rBq4geZVpYTK5GCgsAAPBImy8rmjBx0YCfHQKypGHVgUM7zpTHoNnI9SlvGjUHoUdxOxSzirrFSyUxKHYdzMNQVvAdUhZJOOV1dF3kYdqlJ8Vk3YkOtZSJWXDmZnGjGjMTTSnXeuIglxAA/fipeKSzuyOWuXMLD4nUqMx+i2J80GCGPd3yGsrapDSepRd+zMJ7C6C/vDSjg4HreyGyOEB4aWOyxBfvCtfNNuymHsgwXMjuq6lIdCAIYJzEtdStSbppySY2caKeGR3siBhqC00IqnvCZoxYjBoGj5pFxVzvxJdUVqAS34qaHqmPZiNV1hevBJe18JweY8oSDQ3KQ9torm0Yx4DtHGgsOACemxCwGpOlhcKtsakIjojiXVc4Fw5G9G3+iYtmwSTwaMSHQ3DN4AlH8Jx6LCiNZGaQ4UoeIIpXmhWFCZMXLDEQEhtSTZl25nUIAIIB7vNF5yHFc4NexpitrkeLB3FrgdCR4b084iOt3iHGUnxFu3jTzB+yQfaY7/ADDG8GD1Kd8PhgEPhgBtBnbW4INakbt4Sb7R4X+Za7cWfJTutmy/86F/ZhjhLfwsQ0IvD5gat6jXp0Vv4ZFqwL5ggTbocRsRho5hDmnmDUVX0PsjibY0JkRuj2g9D8Q8DUJse08pwZXhfO20sh+Hmo0Hc15y/pPeb6EL6LCqL2yYbljQpgCz2ljv1NuPQ/0q/jvKGcV26JxUGMbqZFUOJqrZ9FiwNk5fuF/8Rp4BPUT8uEOiW8KgZIbW8APPeie1c1llmvB4Llt5tV1xIC4jGzFAsWHdPRSYE3nFVFxUdw9Cl7POCdLtLtOKnSooS0nouEs0taHNuN6mvIcajQ6eO7lol1vhWcaojhcMF47uYk2B06nkEyxZQPhkHvuFHbwAKgktAIpprqlbD394bt3DqnTCo4L35dAco8BT7+aVbW+UNmG5aEkuNLVaPmP3ZRMUYQLkk8OA5pgnomVgpd1aDl0CGmVBBLrk/sBDeqaYk6HKm7jf6I/si/8ANIofkoWIsc0G1iaqTslE/N0/ul2eYyTg7RG0DT87oJi2El5zNNvlyTPNtHcHL1WSWW4NDVUif+lvDT2dnNcHDU6jrXVT/wALmHaHTiaAVJp1ReYw8UqLbitGQ6gAMBqd/AI8h20fJtqCbOpTMBQg6gO9bacEh+0drcsJ2+pHgrFjNpUHdpy5eap7bWf7SLQGobQAc96XXKeXEL0Y6K0/ZViWUugE2AD2+NnjzofEqq2XcE3bMzJhRoMTg6h/S6xr5p50lrdfQ8ClEte0jCu3kYtBV0P8xv8At1Hi2qNYbFzNClxWVBBuCKHmN6pLq7RsfLrmWUR+oR/aHDzLzMaCdGPcG821q0/8SEDiC66cukotOG66k4rC7WUewai48LhQgVJl5jL0Oq4+l1dys2YbuW9EpmYDoZI4LNpMFcx5fDGZjr21bXd0QWHDi0IDTQ8bIw/+tcOeCOliPqpJgBrgAd/zUJki5hzV8ApMxEoATvPzsl6qsu8UqXNHEncfXVGcGnSLDf8AuqBQSCPmp+FDvJLOV/Hqw4QmAkE3oEMxnH2wTkhtDn7+DevPktcXxXsIXdH5jrN+rjyASm14pckmpJJuSdalDTbm9Os1ORnmr7g8tEw7Fy1Xl3BLH4/4SQR8k67GxmBjqUqSPJaYm9pq6OmMUBbSnuhBv8XayI1sUWdZrha/AqdOTDS5p1NNBeyH4zhvbwXNsHU7n8rhcGoT1Oak5MMOEHi1wRf1XIwC0Wsk/Y/aRwrCjWe00NfJNsxM5tNChuWDqxCnopa1ziRxceAFST6Kj5+Lme53Fxp0rqeauedid2IHCvdPQih1KpydYBEcNwNqfRGSo51zlodq87prwSVzU9EuyWjhxTlsV3mkHVvyOipnOOEsatPZeMcgB4D7JiCUsAdlNOKa4bkJ0TLtUfthw3JHhxxpEZld+pmnofRVm5t1fPtSkO1kXuAq6EREHT3XehPkqIfqujG7xRvay6U1WzVkyKLkyKuexWVvF0oUJm5YbkWeahQo6IgMxLoXFlq2vQI7MLWXhhbXI+wA0EONbZr/ANkx4JDBJPC5QudgtLv4RqbWpvodylyeYw4mUWcKX1Fv7eYS5TlbxZcIWPzDi8k2rSgI0G4KAwGgF+BNPXmmKHh7SWGK4knjWxDRbpz4hDJmRcO9DfVo1aQAaddyN1C4y5cokPDq++fLeAak+VUalpbsmVa0kPcAxx0A3PsbA/Rc8PcD8T2OratHCnUaI1KzJLxDdEgkjQGI35dFp/xT89c70IYcbEkgklzaVpo0G46H1RE4kwNLg4EaXoLimnMZh5oY6UgM1itBIdQQmVI8dATxoosng/aODGl7YI+EkVO+pNK1rdNdB6ZAuLwy6KI8CucAl7TatLkCm+l6ck3bNYp28MEWIsQda70IxDBzAjsLS6j63Lq1NNaEWNKorAlgyNRoAc9oLgNM2hPjZJZLzGwtnFbbQzFAGjeWkmvwioJ8DfwVYYtLkPcRdpJLSOBNVYm0cMEUJpSpIdcltxbiKX50PFIrIlatcdTUKuGM6c/kytobCiU0TVsZN5Yl9DY9ClyPL0NkW2XZ+bRbKBit2ROVwKaoEQJFwaaqMp95hp1G77JsgRdFPE2SZiEuIkN8M6PaWnoRRfNToBY4tdq0kHqLFfS7X1CoLbuV7KfjtAsXZx0eA75kqvjvcSyOGIQ9+4obmUfYXHe3gmFEoXQ7dWfCfDTwU7FMMPvQyRy1B+yWzfMGVzERaxHIT/iJYcsQUPFTYMwHaGqENUWaZwXKAaHRSYoUYm9loFa4lADmkHW1Olb/AEXmGEtDg0WqKb9AaeuVSnuFL3t6KFLHM2oNmkgAaupXd1BRPhUvDJhroUQONS0VF71r9K1816+VLhUUFdw3KEyVcMzW2qW6i5sTrx4gI5hfu0Otacb8VLOarp8V4QJKR3HT96JgkMKYWkkX5gei1gSza6UojEBoFFsavc7prCwiFcip67kQkZZoFRaq6y7G0rxXcU8PojUrlaAbStq6FpRpqamn73qJDcXvc4ijm0LTxaBrbUa6c1Kx92V44uDgDXTTUcKfJbYdLnJQAC7a0vY3pY2r3j4psEc7wXttWueGFtQ0Nuf4iTbTWgr5pCjVB5q85nCmxIZaRW37sqi2lwowYpBHRUrniLIvzGh1RvBZfLFJ5fUJWgA1snLAn1bfUBbK7jScjElHLH5vPmCnrDJkOaL/AL3JADUXwOeLDlJtW3IqGN1VLD/DNlUPtegUm4bx8UL/AKuI+qteTjhwqFW3tlhXln/+Rv8A1Krj2lkq3AsS/Dx2RN2jubD7338FcEu8OAOoIt9FR7XKy/Z3ifaQuyJ70Pu9W/D9R4IYX4FG8Qw5rxdoKX4uBAGrHOaetQniJCshE3BTWDKUY0vMM3teOtD6rkJ+hpEY5nPd5hHYuqjRYdQl2bUCo04CO6a9FDwuJQG9TVxHWpGm/Rd5mTDiaCnMIbhrPy8w0a8srycMzT6O81rTYzV0amAxWtzggsbTu1BHUUuNLqRJxSYoyDkdwAFyT80OwuYBJZm1Fya6cOl0ewnDBn1BaQ4GmuujeRFvFaz2Uxy9LqiMKWObMOVeFSK0RdrTlNQK0sONtPRbfhgTlsW5W08feofACnJZDI11AqWi1/hpTdS6Hqb9XURQQADSm82rYaei3lXE5wd1KW3n9+qjyZq/unNck8GjShG6uvgpzmBxy7rXFRWjj9AE3qTLyAuMQXviMhtbmdYAmlr687NR+dgCXgwIPxRHOcTxIYSfUgI5hOGNae1c0doRSvBvAeQSntxGJnIDWn3Mv9RNfRJbLeCe1sGZBthVLW3Wz3bMzt1CYoL6UCImFmbQqqb56ZJFrqEaJk2dgE56cAB6/ZdNqpYNmntbuomT2fSYLXOI1J+yGWIyhj4ZGq1hGidsWwIPFW2KV4+FRGnQqWWNUmQxguJUoDolr24Q6ykGIPhjUrycx32UmHmadDVRdu3ZsNiCNVjc0MtJHxZxYDfbMtL8LlFOVRvY7EuxmmGtGv7jvH3fWnmUGcF4AjOKR9DQHVHVRJ6FyUDY3E+3l2O+KlHfqFj9/FHZiDUKpSfMtubIZFqE1TkhyQuNh5NqIaNskY5OFv5YsXCpPXcEY2IwsRYMaG6wdav8LgO6fA0QvbKULIzKjUJ12DlMmYEe9Rw8RRL8MS40u+FELHij2Gh+45EXR7Cp9waSHUJtUClq7z4Ju2swBkxDqBSK0CjqG41yuIGnySTKwHsGSICA29wb62CnvTox1nORLDdr4jYneacmmtyNx5GqOwdsYD6hzSw01IrfjZBMMlmuu8Act/JSZrZ8PiBsNpvezTWp08Fv0p74cBvDcVgl4ZCaYkR1SGj4uAJJ068FYGHYcGAVud41A/sl/YnZT8MTFiNAe4UA1LG8zxKcmtWyztc2UkvD1oSHjsoXTjncHN8gBZP1aCqUMWjhr8297hQDgSAPNDEHKK78xoG6lUdhm2iESMtUk86/ZFqq3ZVUbZGk7EFOHyTjsTAyQRx1PjU/VANqZPNPV3ODfSoRaBiQhtytuU1rQyYhPtYLlA4czEjuywxQb3HcskMKiRjnikgcN5+yZ5WWaxoa0USj0gymGNh3953E38uCor2rbT/iprsYZrBgkgU0fE0c7w90ePFWh7Wdp/wcrkhmkaPVrOLW/G/wBoOZXzq1DLovaYtAF6QtaraY6ezTFuzjGC42iXH6hS3iPkrmlwHBfNMvHLHNc00c0hzTzFwr+2SxhsxCY9u8X5HQjwIonxu4WiseUB1WkHCwiDhVSILFtirn2r4GPwrYwF2Pa0/pcHD5kKdhMPLClY49x7QwnhUW9Qm/aTBxNSkWCdXNq3k8d5p8wPNLfs2/OkXysQUdDc5tDq01zDoQ6vkp7MaZeDUjmNVNZhzTqPSvzXHBzWgIvdpHBw1RxkOiW8CEwsJh1/02/wDFv2RGDDpoF3W1ktotWtWELM1dFzjxMo5nRDTIeJTFiK2F3H/18Unw3mLMZjoyp8d3ki+001khhg1dqhMp+XDJOu/rqnkY0S8MBoQ3EJlzQcrSeiGQMQJbmY6o4cDwUyXfmoVTGlsBP8PjRn5nDLzOo6I5hmCsZoKu3kohCb/dSobKWTaZvCYAKL2LEDWlziAACSdwAuSVs0KtfbdtL2EsJVhpEmK5qfDCHvf8jb/ksFVN7QNpDPTkSMP9NvchDhDaTQ9Xa+KXWahar1ineRiZuWmVdWheOFE/wrk1pT77MMVLHPgk7w9vycPkfNJUJta1RHAJoQZiG92mah6Gx+dfBGTWgr6HloocKhT5Vt0s4JOAGhPdOh39DwTVLCjc3H5bgtnw2KU40CU8SaJWdZMNtDjjJE/8gpld4j/qmKNEuAh+0Ur2stEbS7Rnb+pt7eFR4qetQ4tKMD4hitqLUpucePkiYqomDS+SDDabuDRXrS6miiS0XtKrmbkjdoumdYxtggzUkNCi0LjUraK7MaDRdI4ysJ5JmI+Lv7SYPBqhY/HyQqDU/NEJeFUucd5qUtbSz1Scum5bK6hpHHAo5zPPACvBNOCTIeSB5cEq4JBywyd5RnZ6IGxfmjgFOEMKVC5rlCXeGFUjI8ZrGlzjRrQSSdwAqSV8rba4+Z6cizBrlccsMfww22aOXHqSrl9t20PYSYl2GkSYOU8RCF3nxNG+JXz8ly/jR4VszVeLZmqUyczivHELCbLxvNU+JuzTQVK5xIi8JsvKJqC2ti8S7WHDce9YMeOdq/dWRLTRFGu1AFep0Xz7sbjZlphpJHZONH10bYgO8PkrtlI+drIhNanw0AHhRazfIyjuXVbYeauNVq9/c8F1wjRJlDwV0qLreGyguukMDVbuUdC1DRvUaaj7gvZuNSw1WstB3rSfWbSsGl964Y5MhkM8TYDiiD3BoJNgNUtZTMxc7vcboEYKLCkSYRJ3glV/isLvkc1b8aH3TbcqwxKAe2Nt5+aGc3DY17CZlYOh+ilYXC948lrGh2FeB+YUjD3d087BPiWm/DngtHGgr4qSCo8iyjQOSg7XYj+GkpiPWjmQnFp/nIo31IVk3z37T8aM1iMZ1QWwyYLKfwsJHq7MfFKZXpdW5udSeKxSvPJpNMC9ZqvF6zVYRN0O11pkWLFVJ65q8Ld6xYjfrNoTdVZnss2hrWWi1JY1xh821u09CbcjyWLEYFWRBjOa2jjU7vt4I3hDO6Cd6xYp5KwZYLBeOdSpO5YsUhRYUIucXHeprG0WLFqwPiMYxXdm33d/NTYEENAA3LFiYXsRtlX2KwB2x6rFiFaOccCtCK2A+anSMkK14aLFiphCZU0ycKwO5VF7f8ce3spNtobh2j+LiD3R0GqxYtl1QUsVlVixTO9W0PVYsRB//9k=" alt="صورة الشيخ – ارفع صورة إذا توفّرت" />
+        <div>
+          <span class="badge">سيرة علمية وتاريخية</span>
+          <h1 class="title">الشيخ الجليل <span class="muted">عبد الله شاكر الكرسيفي </span></h1>
+          <p class="subtitle">عالِمٌ ومربٍّ، ترك أثراً علمياً وتربوياً في المغرب.</p>
+          <div class="kicker">
+            <a class="btn" href="#about" aria-label="انتقال إلى النبذة">اقرأ النبذة</a>
+            <a class="btn" href="#positions" aria-label="الانتقال إلى المناصب">المناصب</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="grid" aria-labelledby="about-title">
+      <article class="card" style="grid-column: span 12;">
+        <h2 id="about-title">نبذة مختصرة</h2>
+        <p>
+          وُلِد الشيخ سنة <strong>1923</strong> في <strong>قرية جرسيف</strong>، <strong>عمالة تيزنيت</strong>.
+          كرّس حياته للعلم والتعليم وخدمة الشأن الديني.
+        </p>
+      </article>
+
+      <div class="two-col">
+        <article class="card">
+          <h2>الميلاد والنشأة</h2>
+          <p>
+            النشأة ببيئة علمية محافظة، ما مهّد لمسيرته في طلب العلوم الشرعية واللغوية منذ سنٍّ مبكِّرة.
+          </p>
+        </article>
+        <article class="card">
+          <h2>الوفاة</h2>
+          <p>
+            انتقل إلى رحمة الله تعالى في <strong>29 ديسمبر 1998</strong>، بعد عمرٍ حافل بالعطاء العلمي والتربوي.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="grid" aria-labelledby="edu-title">
+      <article class="card" style="grid-column: span 12;">
+        <h2 id="edu-title">التعليم والشهادات</h2>
+        <ul class="list">
+          <li>الجزءان الأول والثاني من <strong>شهادة البكالوريا</strong> بجامعة <strong>القرويين</strong> بفاس.</li>
+          <li><strong>شهادة العالمية</strong> من جامعة القرويين.</li>
+          <li><strong>دبلوم علوم الحديث</strong> من <strong>دار الحديث الحسنية</strong>.</li>
+          <li><strong>دبلوم علوم التفسير</strong> من دار الحديث الحسنية.</li>
+          <li><strong>إجازات في العلوم الإسلامية</strong> صادرة عن عدد من شيوخ القرويين.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- POSITIONS -->
+    <section id="positions" class="grid" aria-labelledby="pos-title">
+      <article class="card" style="grid-column: span 12;">
+        <h2 id="pos-title">المناصب السياسية والعلمية</h2>
+        <div class="timeline">
+          <div class="t-item"><strong>مؤسس</strong> <span class="muted">المدرسة العلمية بوادي ماسة</span>.</div>
+          <div class="t-item"><strong>أستاذ</strong> بجامعة <span class="muted">القرويين</span>.</div>
+          <div class="t-item"><strong>أستاذ</strong> في <span class="muted">المعهد الإسلامي بتارودانت</span>.</div>
+          <div class="t-item"><strong>أستاذ</strong> في <span class="muted">دار الحديث الحسنية</span>.</div>
+          <div class="t-item"><strong>رئيس</strong> <span class="muted">المجلس العلمي لتارودانت</span>.</div>
+          <div class="t-item"><strong>عميد</strong> <span class="muted">كلية الشريعة بأكادير</span>.</div>
+        </div>
+      </article>
+    </section>
+
+    <!-- HONORS -->
+    <section id="honors" class="grid" aria-labelledby="hon-title">
+      <article class="card" style="grid-column: span 12;">
+        <h2 id="hon-title">الأوسمة والتكريمات</h2>
+        <ul class="list">
+          <li>حامل <strong>وسام المسيرة الخضراء</strong>.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- CONTACT / FOOTER CALLS -->
+    <section id="contact" class="grid" aria-labelledby="contact-title">
+      <article class="card" style="grid-column: span 12;">
+        <h2 id="contact-title">معلومات إضافية ووسائط</h2>
+        <p class="muted">
+          يمكنك إضافة صور، مقاطع فيديو، أو وثائق PDF حول الشيخ، كما يمكنك إدراج سيرته الكاملة وخطبه ومؤلفاته إن وُجِدت.
+        </p>
+        <div class="kicker" style="margin-top: 10px;">
+          <button class="btn" id="printBtn" type="button">طباعة الصفحة</button>
+          <button class="btn" id="shareBtn" type="button">مشاركة</button>
+        </div>
+      </article>
+    </section>
+
+    <footer>
+      <div class="small">© <span id="year"></span> — سيرة الشيخ الجليل. جميع الحقوق محفوظة.</div>
+    </footer>
+  </main>
+
+  <script>
+    // سنة ديناميكية
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // تمرير ناعم للروابط داخل الصفحة
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', (e) => {
+        const id = a.getAttribute('href');
+        const el = document.querySelector(id);
+        if (el) {
+          e.preventDefault();
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // طباعة
+    document.getElementById('printBtn').addEventListener('click', () => window.print());
+
+    // مشاركة (Web Share API إذا كانت متاحة)
+    document.getElementById('shareBtn').addEventListener('click', async () => {
+      const data = { title: document.title, text: 'سيرة الشيخ الجليل', url: location.href };
+      if (navigator.share) { try { await navigator.share(data); } catch(e){} }
+      else { navigator.clipboard.writeText(location.href); alert('تم نسخ الرابط.'); }
+    });
+  </script>
+
+  <!-- مخطط بيانات منظمة Schema.org: شخص -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "الشيخ الجليل (أدخل الاسم)",
+      "description": "عالِم ومربٍّ مغربي، مؤسس المدرسة العلمية بوادي ماسة، وعميد كلية الشريعة بأكادير سابقًا.",
+      "birthDate": "1923",
+      "birthPlace": "قرية جرسيف، عمالة تيزنيت، المغرب",
+      "deathDate": "1998-12-29",
+      "alumniOf": [
+        { "@type": "CollegeOrUniversity", "name": "جامعة القرويين" },
+        { "@type": "EducationalOrganization", "name": "دار الحديث الحسنية" }
+      ],
+      "award": ["وسام المسيرة الخضراء"],
+      "hasOccupation": [
+        { "@type": "Occupation", "name": "أستاذ جامعة" },
+        { "@type": "Occupation", "name": "عميد كلية" },
+        { "@type": "Occupation", "name": "رئيس مجلس علمي" }
+      ]
+    }
+  </script>
+</body>
+</html>
